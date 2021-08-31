@@ -1,3 +1,12 @@
 <h1>{{title}}</h1>
-<app-heroes></app-heroes>
+<!--un nav me muestra varios botoncitos-->
+<nav>
+    <!--estos links van a guardar en el routerLink, la ruta que especifica,
+    lo que logro con eso es que cuando se renderice el router-outlet, el componente que se muestre sea el que se enruto-->
+    <a routerLink="/dashboard">Dashboard</a>
+    <a routerLink="/heroes">Heroes</a>
+</nav>
+<!-- antes estaba el app-heores, pero eso me va a mostrar solo la vista del componente ese
+si uso el router outlet, le voy a poder ir diciendo al router que vista quiero que se vaya mostrando-->
+<router-outlet></router-outlet>
 <app-messages></app-messages>
